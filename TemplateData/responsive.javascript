@@ -24,6 +24,10 @@
         return null;
     }
 
+        const get_width = () => {
+           return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+           
+        }
     const setDimensions = () => {
         gameContainer.style.position = 'absolute';
         gCanvasElement.style.display = 'none';
@@ -35,8 +39,24 @@
         var fitW = Math.round(initialDimensions.width * scale * 100) / 100;
         var fitH = Math.round(initialDimensions.height * scale * 100) / 100;
 
-        gCanvasElement.style.width = winW + "px";
-        gCanvasElement.style.height = winH + "px";
+        console.log((initialDimensions.width * scale * 100 ) / 100, window.getComputedStyle(gameContainer).width)
+
+       var _width_custom = get_width();
+       if(_width_custom >= 480)
+       {
+             gCanvasElement.style.width = ((initialDimensions.width * scale * 100 ) / 100) + 'px'
+            
+       }
+      else{
+            gCanvasElement.style.width = winW + "px";
+            gCanvasElement.style.height = winH + "px";
+      }
+
+
+
+       
+  
+      
         
     }
 
