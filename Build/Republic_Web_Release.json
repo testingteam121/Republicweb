@@ -1,0 +1,17 @@
+{
+"companyName": "IT",
+"productName": "RepublicDaySpinWeb",
+"productVersion": "4.0",
+"dataUrl": "Republic_Web_Release.data.unityweb",
+"wasmCodeUrl": "Republic_Web_Release.wasm.code.unityweb",
+"wasmFrameworkUrl": "Republic_Web_Release.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "Republic_Web_Release.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.36f1"
+}
