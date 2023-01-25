@@ -35,7 +35,8 @@
         var fitW = Math.round(initialDimensions.width * scale * 100) / 100;
         var fitH = Math.round(initialDimensions.height * scale * 100) / 100;
 
-   
+        gCanvasElement.style.width = winW + "px";
+        gCanvasElement.style.height = winH + "px";
         
     }
 
